@@ -1,0 +1,13 @@
+<?php 
+session_start();
+
+include '../view/header.php'; ?>
+<main>
+<nav>
+    <h1>Database Error</h1>
+    <p>An error occurred while attempting to work with the database.</p>
+   
+    <p><?php echo 'Error ' . $_SESSION['errorCode'] . ': ' . $_SESSION["errorMessage"]; ?></p>
+    </nav>
+</main>
+<?php include '../view/footer.php'; ?>
